@@ -10,6 +10,8 @@ target 'DemosThing' do
 
   pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
 
+  pod 'react-native-razorpay', :path => '../node_modules/react-native-razorpay'
+
   target 'DemosThingTests' do
     inherit! :complete
     # Pods for testing

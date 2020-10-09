@@ -16,11 +16,17 @@ export default function Home({navigation}) {
         }}>
         <Text style={styles.txt}> Location with geolocation</Text>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('NewLiveLocation');
+        }}>
         <Text style={styles.txt}> react-native-geolocation-service</Text>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <Text style={styles.txt}>Payment Integration</Text>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('PaymentIntegrationRazorPay');
+        }}>
+        <Text style={styles.txt}>RazorPay Payment Integration</Text>
       </TouchableOpacity>
       <TouchableOpacity>
         <Text style={styles.txt}>Firebase Google Signin</Text>
