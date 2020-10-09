@@ -6,10 +6,9 @@ import LiveLocation from './App/Screen/LiveLocation';
 
 export default function App() {
   return (
-    // <NavigationContainer>
-    //   <AppNavigator />
-    // </NavigationContainer>
-    <LiveLocation />
+    <NavigationContainer>
+      <AppNavigator />
+    </NavigationContainer>
   );
 }
 
