@@ -1,6 +1,7 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import AppSearch from '../Screen/AppSearch';
+import GoogleSignin from '../Screen/AppGoogleSignin';
 import Home from '../Screen/Home';
 import LiveLocation from '../Screen/LiveLocation';
 import NewLiveLocation from '../Screen/NewLiveLocation';
@@ -30,6 +31,12 @@ const SplashNavigator = () => (
       component={PaymentIntegrationRazorPay}
       options={{headerShown: false}}
     />
+    <Stack.Screen
+      name="GoogleSignin"
+      component={GoogleSignin}
+      options={{headerShown: false}}
+    />
+    
   </Stack.Navigator>
 );
 

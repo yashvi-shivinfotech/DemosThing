@@ -28,7 +28,10 @@ export default function Home({navigation}) {
         }}>
         <Text style={styles.txt}>RazorPay Payment Integration</Text>
       </TouchableOpacity>
-      <TouchableOpacity>
+      
+      <TouchableOpacity  onPress={() => {
+          navigation.navigate('GoogleSignin');
+        }}>
         <Text style={styles.txt}>Firebase Google Signin</Text>
       </TouchableOpacity>
       <TouchableOpacity>
