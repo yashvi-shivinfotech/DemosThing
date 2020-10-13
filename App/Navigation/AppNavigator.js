@@ -6,6 +6,8 @@ import Home from '../Screen/Home';
 import LiveLocation from '../Screen/LiveLocation';
 import NewLiveLocation from '../Screen/NewLiveLocation';
 import PaymentIntegrationRazorPay from '../Screen/PaymentIntegrationRazorPay';
+import ChatWithSocketIo from '../Screen/ChatWithSocketI';
+import ApiAppCallingPhp from '../Screen/ApiAppCallingPhp';
 
 const Stack = createStackNavigator();
 const SplashNavigator = () => (
@@ -34,6 +36,16 @@ const SplashNavigator = () => (
     <Stack.Screen
       name="GoogleSignin"
       component={GoogleSignin}
+      options={{headerShown: false}}
+    />
+     <Stack.Screen
+      name="ChatWithSocketIo"
+      component={ChatWithSocketIo}
+      options={{headerShown: false}}
+    />
+     <Stack.Screen
+      name="ApiAppCallingPhp"
+      component={ApiAppCallingPhp}
       options={{headerShown: false}}
     />
     

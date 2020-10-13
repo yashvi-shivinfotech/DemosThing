@@ -37,6 +37,16 @@ export default function Home({navigation}) {
       <TouchableOpacity>
         <Text style={styles.txt}>Firebase Facebook Signin</Text>
       </TouchableOpacity>
+      <TouchableOpacity  onPress={() => {
+          navigation.navigate('ChatWithSocketIo');
+        }}>
+        <Text style={styles.txt}>Chat With Socket Io</Text>
+      </TouchableOpacity>
+      <TouchableOpacity  onPress={() => {
+          navigation.navigate('ApiAppCallingPhp');
+        }}>
+        <Text style={styles.txt}>Php Api calling</Text>
+      </TouchableOpacity>
     </View>
   );
 }
